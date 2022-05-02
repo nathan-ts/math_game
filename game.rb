@@ -30,7 +30,7 @@ class Game
         puts "#{player.name}: That's a negatory."
         player.fail
       end
-      puts "#{player.name} with #{player.lives} lives left! And in this corner #{opp.name} with #{opp.lives} lives left."
+      puts "Over here we have #{@p1.name} with #{@p1.lives} lives left! And in this corner #{@p2.name} with #{@p2.lives} lives left."
 
       @turn += 1
     end
