@@ -9,7 +9,3 @@ class Question
   end
 
 end
-
-# test = Question.new()
-# puts test.question
-# puts test.answer

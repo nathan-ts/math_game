@@ -21,19 +21,3 @@ class Player
   end
 
 end
-
-# test = Player.new(1)
-# puts test.name
-# puts test.lives
-# test.fail
-# puts test.lives
-# puts test.alive?
-# test.fail
-# puts test.lives
-# puts test.alive?
-# test.fail
-# puts test.lives
-# puts test.alive?
-# test.fail
-# puts test.lives
-# puts test.alive?
