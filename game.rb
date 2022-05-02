@@ -10,19 +10,19 @@ class Game
   end
 
   def start_game()
-    # Loop through each turn
+    # Loop through each turn until someone dies
     while (@p1.alive? && @p2.alive?) do
+      #  Set up active player for the turn
       puts "===== TURN #{@turn} ====="
       player = @p1
-      opp = @p2
       if (@turn % 2 == 0)
         player = @p2
-        opp = @p1
       end
       # Generate and display question
       q = Question.new()
       puts "#{player.name}: #{q.question}"
-      # Get answer and remove life if incorrect
+      # Get answer and remove life if incorrect, and report result
+      print "> "
       res = gets.chomp
       if q.answer == res.to_i
         puts "#{player.name}: Once again, you have judged correctly."
